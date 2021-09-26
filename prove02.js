@@ -21,12 +21,12 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/admin',productData.routes)
 app.use('/',bookStoreRoute.routes)
 
-app.use((req, res, next) => {
-    res.status(404).render('pages/404', {pageTitle: 'Page Not Found'})
-} )
+// app.use((req, res, next) => {
+//     res.status(404).render('pages/404', {pageTitle: 'Page Not Found'})
+// } )
 
 
 
+module.exports = app
 
-
-app.listen(3200)
+// app.listen(3200)
