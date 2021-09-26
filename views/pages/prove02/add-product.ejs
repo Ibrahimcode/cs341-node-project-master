@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+</head>
+<body>
+    <main>
+        <div class="form">
+            <form action="/admin/book" method="post">
+                <label for="title" name="title" class="book-title">
+                    BooK Title
+                </label>
+                <input type="text" name="title" id="title" class="book-title-inp">
+
+                <button type="submit" class="book-sub">Add Book</button>
+            </form>
+
+        </div>
+    </main>
+</body>
+</html>

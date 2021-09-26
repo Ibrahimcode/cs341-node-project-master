@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+</head>
+<body>
+    <main>
+        <% if (books.length > 0) {%>
+            
+            <div class="book-card">
+                <% for (book of books) {%>
+                <div><%= book.title%></div>
+                <%}%>
+            </div>
+        <%} else{%>
+            <h1>Books Here</h1>
+            <a href="/admin/book">Add New Book</a>
+        <%}%>
+        
+        
+    </main>
+</body>
+</html>
