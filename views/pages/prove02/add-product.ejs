@@ -5,17 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/stylesheets/prove02/add-book.css">
 </head>
 <body>
     <main>
         <div class="form">
-            <form action="/admin/book" method="post">
-                <label for="title" name="title" class="book-title">
-                    BooK Title
-                </label>
-                <input type="text" name="title" id="title" class="book-title-inp">
+            <form action="/book/add-product/admin" method="post">
+                <div class="book-form-data">
+                    <div class="inp-lab">
+
+                        <label for="title" name="title" class="book-lab">
+                            BooK Title:
+                        </label>
+                        <input type="text" name="title" id="title" class="book-inp">
+                    </div>
+
+                     <div class="inp-lab">
+                        
+                         <label for="author", name="author_lb", class="book-lab">Author:
+                        </label>
+                        <input type="text" name="author" id="author" class="book-inp">
+                    </div>
+                
+
+                     <div class="inp-lab">
+                        
+                         <label for="publish" name="publish" class="book-lab">Published By:
+         
+                         </label>
+                         <input type="text" name="publish" id="publish" class="book-inp">
+                    </div>
+
+
 
                 <button type="submit" class="book-sub">Add Book</button>
+            </div>
             </form>
 
         </div>

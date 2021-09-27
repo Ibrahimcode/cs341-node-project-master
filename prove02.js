@@ -18,7 +18,8 @@ app.use(bodyParser.urlencoded({extended: false}))
 // for serving static files like css
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/admin',productData.routes)
+app.use('/add-product',productData.routes)
+
 app.use('/',bookStoreRoute.routes)
 
 // app.use((req, res, next) => {

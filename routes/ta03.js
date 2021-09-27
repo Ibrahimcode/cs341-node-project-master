@@ -11,4 +11,7 @@ router.get('/', (req, res, next) => {
   });
 });
 
+// const ta03Controller = require('../controllers/ta3.js')
+
+// router.get('/', ta03Controller.getProducts)
 module.exports = router;

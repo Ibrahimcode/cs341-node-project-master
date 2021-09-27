@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/stylesheets/prove02/book.css">
 </head>
 <body>
-    <main>
+    <main class="main">
+        <h1>Your Book Shelf</h1>
+        <a class="admin-link" href="/book/add-product">Add New Book</a>
+        <div class="card-container">
         <% if (books.length > 0) {%>
             
-            <div class="book-card">
-                <% for (book of books) {%>
-                <div><%= book.title%></div>
+            <% for (book of books) {%>
+                <div class="book-card">
+                    <div class="book-title"><%= book.title%></div>
+                    <div class="author-name">Written By: <%=book.author%></div>
+                    <div class="publish">Published By: <%=book.publish%></div>
+                </div>
                 <%}%>
-            </div>
-        <%} else{%>
-            <h1>Books Here</h1>
-            <a href="/admin/book">Add New Book</a>
-        <%}%>
+        <%} %>
+        </div>
         
         
     </main>

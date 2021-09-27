@@ -1,0 +1,18 @@
+.book-form-data{
+    max-width: 50%;
+    margin: auto;
+}
+
+.inp-lab{
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+
+}
+
+.book-inp{
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-left: 5%;
+}
